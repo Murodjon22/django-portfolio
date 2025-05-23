@@ -116,16 +116,11 @@ USE_TZ = True
 
 # Loyihangizning settings.py faylida quyidagilar bo'lishi kerak:
 
-import os
-
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = [BASE_DIR / "static"]  # agar siz static fayllarni qo‘lda joylashtirgan bo‘lsangiz
+STATIC_ROOT = BASE_DIR / "staticfiles"    # bu joyga collectstatic orqali to‘planadi
 
-# Agar sizda STATICFILES_DIRS bor bo‘lsa, uni ham qo‘shing:
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
 
 
 
