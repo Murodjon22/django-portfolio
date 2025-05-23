@@ -125,7 +125,7 @@ STATIC_URL = '/static/'
 #     BASE_DIR / "static",
 # ]
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 STATIC_ROOT = BASE_DIR / "static"
    # bu joyga collectstatic orqali to‘planadi
