@@ -118,7 +118,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [BASE_DIR / "static"]  # agar siz static fayllarni qo‘lda joylashtirgan bo‘lsangiz
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+  # agar siz static fayllarni qo‘lda joylashtirgan bo‘lsangiz
 STATIC_ROOT = BASE_DIR / "staticfiles"    # bu joyga collectstatic orqali to‘planadi
 
 
