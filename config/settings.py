@@ -116,12 +116,17 @@ USE_TZ = True
 
 # Loyihangizning settings.py faylida quyidagilar bo'lishi kerak:
 
+import os
+
 STATIC_URL = '/static/'
 
-# Agar siz static fayllarni loyihangiz ichida saqlasangiz:
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# Agar sizda STATICFILES_DIRS bor bo‘lsa, uni ham qo‘shing:
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
+    os.path.join(BASE_DIR, 'static'),
 ]
+
 
 
 # Default primary key field type
