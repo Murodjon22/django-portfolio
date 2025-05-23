@@ -116,6 +116,8 @@ USE_TZ = True
 
 # Loyihangizning settings.py faylida quyidagilar bo'lishi kerak:
 
+import os
+
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
